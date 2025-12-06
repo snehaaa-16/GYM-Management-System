@@ -1,0 +1,19 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Build
+build/
+out/
+dist/
+*.class
+*.jar
+*.war
+*.ear
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip

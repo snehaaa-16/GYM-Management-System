@@ -1,0 +1,22 @@
+Mavenized Gym Management System
+===============================
+
+Files moved: 19 java files copied to src/main/java/gymmanagement
+Java files: AdminFront.java, ChangePlanUser.java, ChangeSlotUser.java, ChangeTrainerUser.java, DeleteUser.java, Equipment.java, EquipmentAdd.java, EquipmentsDelete.java, EquipmentShow.java, GymManagement.java, MainLogin.java, Payment.java, Trainer.java, TrainerDetails.java, Trainerregister.java, UserDetails.java, UserForm.java, UserLogin.java, UserRegister.java
+
+How to build locally (requires Java and Maven installed):
+1. cd to the project root
+   cd gym_maven_project
+2. Build:
+   mvn clean package
+   This will produce a shaded jar in target/ (if maven-shade-plugin runs).
+3. Run:
+   java -jar target/gym-management-system-1.0.0.jar
+
+If mvn is not installed, you can import the project into IntelliJ IDEA:
+- File -> New -> Project from Existing Sources -> select pom.xml
+- IntelliJ will manage the build and you can run MainLogin or other main class.
+
+Main class guessed as: gymmanagement.MainLogin
+If that is not the correct entry point, update the <mainClass> in pom.xml.
+
