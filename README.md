@@ -1,23 +1,144 @@
 # Gym Management System
 
-**Cleaned repository** for the Gym Management System project.
+A Java Swing desktop application for managing gym members, trainers, plans, equipment, and payments.  
+This project demonstrates object-oriented design, GUI development, and modular structuring using Maven.
 
-## What's included
-- `src/gymmanagement/` — Java source files (only `.java` files; compiled classes removed)
-- `uml/` — UML diagrams from the original project
-- `.gitignore` — Clean ignore rules
-- `build.xml` — (if present, copied from original)
+---
 
-## How to run
-1. Import the project in IntelliJ IDEA as a plain Java project.
-2. Ensure a JDK (Java 8+) is configured.
-3. Build / compile the project:
-   - From IntelliJ: Build -> Build Project
-   - Or with Ant if `build.xml` is present: `ant` (requires Ant)
-4. Run the main class (e.g., `gymmanagement.AdminFront` or other entry point).
+## Overview
 
-## Notes & recommendations
-- This repo **does not** include compiled `.class` files or IDE files.
-- If you use Maven/Gradle, consider converting the project for easier build and dependency management.
-- Add instructions here if your project depends on a database or external files.
+The Gym Management System provides a simple interface for both users and administrators.  
+It includes modules for member management, trainer assignment, scheduling, equipment handling, and payment tracking.
+
+Key capabilities:
+- Member registration and login
+- Trainer management
+- Plan and time slot selection
+- Equipment management
+- Payment tracking
+- Admin and user interfaces
+
+---
+
+## Features
+
+### User Module
+- Register and log in
+- Select plans, trainers, and time slots
+- View and update personal details
+
+### Admin Module
+- Add, update, or delete equipment
+- View all members and trainers
+- Manage plans and slots
+- Assign trainers
+- Track payment details
+
+### Payment Management
+- Membership fee management
+- Store and retrieve user payment information
+
+---
+
+## Tech Stack
+
+| Component      | Technology                     |
+|----------------|--------------------------------|
+| Frontend       | Java Swing                     |
+| Backend        | Core Java                      |
+| Build Tool     | Maven                          |
+| Architecture   | Object-Oriented, MVC-style     |
+| Documentation  | UML (Class, Use Case, CRC)     |
+
+---
+
+## Project Structure
+
+```text
+Gym-Management-System/
+├── src/
+│   └── main/java/gymmanagement/
+│       ├── AdminFront.java
+│       ├── MainLogin.java
+│       ├── UserLogin.java
+│       ├── UserRegister.java
+│       ├── Trainer.java
+│       ├── Payment.java
+│       └── (other modules)
+├── uml/
+│   ├── class-diagram.jpeg
+│   ├── use-case.png
+│   └── crc-diagram.png
+├── pom.xml
+├── README.md
+└── .gitignore
+```
+
+---
+
+## How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/snehaaa-16/GYM-Management-System.git
+cd GYM-Management-System
+```
+
+### 2. Build the Project
+
+```bash
+mvn clean package
+```
+
+### 3. Run the Application
+
+If the JAR is built using the Maven Shade plugin:
+
+```bash
+java -jar target/gym-management-system-1.0.0.jar
+```
+
+Or open the project in IntelliJ and run the `MainLogin` class.
+
+---
+
+## UML Diagrams
+
+### Use Case Diagram
+
+![Use Case Diagram](uml/use-case.png)
+
+### Class Diagram
+
+![Class Diagram](uml/class-diagram.jpeg)
+
+### CRC Diagram
+
+![CRC Diagram](uml/crc-diagram.png)
+
+---
+
+## Future Enhancements
+
+* Migrate from file-based storage to a database (e.g., MySQL)
+* Add logging and exception handling layers
+* Improve user interface using JavaFX
+* Add reporting modules (attendance, revenue analytics)
+* Create a REST backend with a modern frontend (React/Angular)
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+You may use, modify, and distribute it as permitted under the license terms.
+
+---
+
+## Author
+
+Sneha Jaiswal
+GitHub: [https://github.com/snehaaa-16](https://github.com/snehaaa-16)
+
 
